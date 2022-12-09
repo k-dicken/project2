@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/project2/static/css/main.e6e7fe2d.css",
+    "main.js": "/project2/static/js/main.af3ef207.js",
+    "static/js/787.f6b2eaaf.chunk.js": "/project2/static/js/787.f6b2eaaf.chunk.js",
+    "static/media/Miku_V4.png": "/project2/static/media/Miku_V4.4748dc4941b8cf57fc8f.png",
+    "static/media/Una_Sugar.png": "/project2/static/media/Una_Sugar.d544d64d44eb38165322.png",
+    "static/media/RinLen_V4.png": "/project2/static/media/RinLen_V4.d8b2a1c969d0b3f197dd.png",
+    "static/media/Exo2.ttf": "/project2/static/media/Exo2.718ec91358aa7ee8083b.ttf",
+    "static/media/Miku_V4.webp": "/project2/static/media/Miku_V4.e28d01ec8bb9e740a491.webp",
+    "static/media/Gumi_V6.webp": "/project2/static/media/Gumi_V6.e990d44944d8b1b54d2f.webp",
+    "static/media/Miku_NT.webp": "/project2/static/media/Miku_NT.7d011b63debd53141e59.webp",
+    "static/media/Una_Spicy.webp": "/project2/static/media/Una_Spicy.7725fa995f58d586ec9b.webp",
+    "static/media/Exo2-Bold.otf": "/project2/static/media/Exo2-Bold.91821756d9dd8df36d23.otf",
+    "static/media/Exo2-ExtraBold.otf": "/project2/static/media/Exo2-ExtraBold.6fba108f903a9607a597.otf",
+    "static/media/Exo2-SemiBold.otf": "/project2/static/media/Exo2-SemiBold.abce6bc457d8439aedb9.otf",
+    "static/media/Luka_v4x.webp": "/project2/static/media/Luka_v4x.b5b34a00a04f8772004f.webp",
+    "static/media/Exo2-Medium.otf": "/project2/static/media/Exo2-Medium.f590c1e95d22c9e4a2a7.otf",
+    "static/media/Exo2-ExtraLight.otf": "/project2/static/media/Exo2-ExtraLight.e59151ea6dad511a5c14.otf",
+    "static/media/Exo2-Light.otf": "/project2/static/media/Exo2-Light.c0ee045882b38ebe5845.otf",
+    "static/media/Gumi_V4.webp": "/project2/static/media/Gumi_V4.05ed751dc3bde51deb15.webp",
+    "static/media/Meika_V5.webp": "/project2/static/media/Meika_V5.7115ef0bb61bb0c701f4.webp",
+    "static/media/Miku_V2.webp": "/project2/static/media/Miku_V2.87407c82c828959d1fd2.webp",
+    "static/media/RinLen_V4.webp": "/project2/static/media/RinLen_V4.b7a28454a112d7ffadc9.webp",
+    "static/media/Miku_V3.webp": "/project2/static/media/Miku_V3.097dba79d6aec23c8da7.webp",
+    "static/media/Gumi_V3.webp": "/project2/static/media/Gumi_V3.baf04da006344613ab5c.webp",
+    "static/media/Una_Sugar.webp": "/project2/static/media/Una_Sugar.07522eb1321a5024a9f3.webp",
+    "static/media/Gumi_V2.webp": "/project2/static/media/Gumi_V2.08a904e11c16b7a81384.webp",
+    "static/media/Luka_v2.webp": "/project2/static/media/Luka_v2.17c303917655e5f3980c.webp",
+    "index.html": "/project2/index.html",
+    "static/media/circle-chevron-left-solid.svg": "/project2/static/media/circle-chevron-left-solid.c293384d49b8a390ff91.svg",
+    "static/media/circle-chevron-right-solid.svg": "/project2/static/media/circle-chevron-right-solid.e0e26f3e059e5a72dd5b.svg",
+    "main.e6e7fe2d.css.map": "/project2/static/css/main.e6e7fe2d.css.map",
+    "main.af3ef207.js.map": "/project2/static/js/main.af3ef207.js.map",
+    "787.f6b2eaaf.chunk.js.map": "/project2/static/js/787.f6b2eaaf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6e7fe2d.css",
+    "static/js/main.af3ef207.js"
+  ]
+}

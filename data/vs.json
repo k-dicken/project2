@@ -1,0 +1,184 @@
+[
+    {
+        "id": 0,
+        "nameOriginal": "初音ミク",
+        "nameTranslation": "Hatsune Miku",
+        "description": "is a VOCALOID2. She is 16 years old and based on a Japanese teenage school girl. She is described as \"an android diva from in the near-future world where songs are lost\".",
+        "color": "#06E9E9",
+        "releaseDate": {
+            "month": "June",
+            "year": "2009"
+        },
+        "company": "Crypton Future Media, Inc.",
+        "programs": ["VOCALOID", "Piapro Studio"],
+        "voiceProvider": "Saki Fujita",
+        "versions": [
+            {
+                "image": "miku/Miku_V2.webp",
+                "version": "V2"
+            }, 
+            {
+                "image": "miku/Miku_V3.webp",
+                "version": "V3"
+            }, 
+            {
+                "image": "miku/Miku_V4.webp",
+                "version": "V4"
+            }
+        ],
+        "languages": ["Japanese", "Chinese", "English"],
+        "music": [
+            {
+            "title": "Viva Happy",
+            "artist": "Mitchie-M",
+            "link": "https://www.youtube.com/embed/WiUjG9fF3zw"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Hatsune_Miku"
+    },
+    {
+        "id": 1,
+        "nameOriginal": "鏡音リン・レン",
+        "nameTranslation": "Kagamine Rin & Len",
+        "description": "are VOCALOID2. They are 14 years old and based on Japanese teenage schoolchildren. They are mirror to each other.",
+        "color": "#FAD22A",
+        "releaseDate": {
+            "month": "December",
+            "year": "2007"
+        },
+        "company": "Crypton Future Media, Inc.",
+        "programs": ["VOCALOID", "Piapro Studio"],
+        "voiceProvider": "Asami Shimoda",
+        "versions": [
+            {
+                "image": "rinlen/RinLen_V4.png",
+                "version": "V2"
+            }, 
+            {
+                "image": "rinlen/RinLen_V4.png",
+                "version": "V4X"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+            "title": "I Wanna Be It!",
+            "artist": "Kinoshita",
+            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+    },
+    {
+        "id": 2,
+        "nameOriginal": "音街ウナ",
+        "nameTranslation": "Otomachi Una",
+        "description": "is a VOCALOID4 and Talk Ex voicebank. She is 11 years old with two voicebanks titled \"Sugar\" and \"Spicy\". ",
+        "color": "#5F5FFF",
+        "releaseDate": {
+            "month": "June",
+            "year": "2009"
+        },
+        "company": "Internet Co., Ltd.",
+        "programs": ["VOCALOID"],
+        "voiceProvider": "Aimi Tanaka",
+        "versions": [
+            {
+                "image": "una/Una_Spicy.webp",
+                "version": "Spicy"
+            }, 
+            {
+                "image": "una/Una_Sugar.webp",
+                "version": "Sugar"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+            "title": "I Wanna Be It!",
+            "artist": "Kinoshita",
+            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+    },
+    {
+        "id": 3,
+        "nameOriginal": "グミ",
+        "nameTranslation": "Megpoid Gumi",
+        "description": "is a VOCALOID2 whose age had been stated to be roughly in her teens.",
+        "color": "#5FDF5F",
+        "releaseDate": {
+            "month": "June",
+            "year": "2009"
+        },
+        "company": "Internet Co., Ltd.",
+        "programs": ["VOCALOID"],
+        "voiceProvider": "Asami Shimoda",
+        "versions": [
+            {
+                "image": "gumi/Gumi_V2.webp",
+                "version": "V2"
+            }, 
+            {
+                "image": "gumi/Gumi_V3.webp",
+                "version": "V3"
+            },  
+            {
+                "image": "gumi/Gumi_V4.webp",
+                "version": "V4"
+            }, 
+            {
+                "image": "gumi/Gumi_V6.webp",
+                "version": "V6"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+            "title": "I Wanna Be It!",
+            "artist": "Kinoshita",
+            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+    },
+    {
+        "id": 4,
+        "nameOriginal": "巡音ルカ",
+        "nameTranslation": "Megurine Luka",
+        "description": "is a VOCALOID whose age had been stated to be roughly in her teens.",
+        "color": "#FF88CC",
+        "releaseDate": {
+            "month": "June",
+            "year": "2009"
+        },
+        "company": "Internet Co., Ltd.",
+        "programs": ["VOCALOID", "Piapro Studio"],
+        "voiceProvider": "Asami Shimoda",
+        "versions": [
+            {
+                "image": "luka/Luka_v2.webp",
+                "version": "V2"
+            }, 
+            {
+                "image": "luka/Luka_v4x.webp",
+                "version": "V4x"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+            "title": "I Wanna Be It!",
+            "artist": "Kinoshita",
+            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+            },
+            {
+            "title": "Viva Happy",
+            "artist": "Mitchie-M",
+            "link": "https://www.youtube.com/embed/WiUjG9fF3zw" 
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+    }
+]
