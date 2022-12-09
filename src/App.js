@@ -29,7 +29,7 @@ export default function App() {
   if (vocalSynths == null) {
     return (
       <div>
-        <p>Loading...</p>
+        <p>Loading..</p>
       </div>
     );
   }
