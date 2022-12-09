@@ -1,13 +1,47 @@
 body {
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #E0E0E1;
+}
+
+body::-webkit-scrollbar {
+  position: fixed;
+  right: 20px;
+}
+
+/* * {
+  border: red 1px solid;
+} */
+
+@font-face {
+  font-family: Exo2;
+  src: url(./fonts/Exo2.ttf);
+}
+
+* {
+  font-family: Exo2;
+  /* font-size: 1.8vh; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  /* width: 200vw;
+  height: 200vh;
+
+  margin: -40vh 0 0 -50vw;
+
+  transform: rotate(330deg); */
 }
