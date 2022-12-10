@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project2/static/css/main.e6e7fe2d.css",
-    "main.js": "/project2/static/js/main.80640d38.js",
+    "main.css": "/project2/static/css/main.adee1012.css",
+    "main.js": "/project2/static/js/main.25e757b0.js",
     "static/js/787.f6b2eaaf.chunk.js": "/project2/static/js/787.f6b2eaaf.chunk.js",
     "static/media/Miku_V4.png": "/project2/static/media/Miku_V4.4748dc4941b8cf57fc8f.png",
     "static/media/Una_Sugar.png": "/project2/static/media/Una_Sugar.d544d64d44eb38165322.png",
@@ -10,6 +10,7 @@
     "static/media/Miku_V4.webp": "/project2/static/media/Miku_V4.e28d01ec8bb9e740a491.webp",
     "static/media/Gumi_V6.webp": "/project2/static/media/Gumi_V6.e990d44944d8b1b54d2f.webp",
     "static/media/Miku_NT.webp": "/project2/static/media/Miku_NT.7d011b63debd53141e59.webp",
+    "static/media/Stardust.webp": "/project2/static/media/Stardust.9e5b4ee5e88a2990a4c1.webp",
     "static/media/Una_Spicy.webp": "/project2/static/media/Una_Spicy.7725fa995f58d586ec9b.webp",
     "static/media/Exo2-Bold.otf": "/project2/static/media/Exo2-Bold.91821756d9dd8df36d23.otf",
     "static/media/Exo2-ExtraBold.otf": "/project2/static/media/Exo2-ExtraBold.6fba108f903a9607a597.otf",
@@ -19,23 +20,34 @@
     "static/media/Exo2-ExtraLight.otf": "/project2/static/media/Exo2-ExtraLight.e59151ea6dad511a5c14.otf",
     "static/media/Exo2-Light.otf": "/project2/static/media/Exo2-Light.c0ee045882b38ebe5845.otf",
     "static/media/Gumi_V4.webp": "/project2/static/media/Gumi_V4.05ed751dc3bde51deb15.webp",
+    "static/media/IA_V3.webp": "/project2/static/media/IA_V3.6216c010f5c9c51824fd.webp",
     "static/media/Meika_V5.webp": "/project2/static/media/Meika_V5.7115ef0bb61bb0c701f4.webp",
     "static/media/Miku_V2.webp": "/project2/static/media/Miku_V2.87407c82c828959d1fd2.webp",
+    "static/media/RinLen_v2.webp": "/project2/static/media/RinLen_v2.c985b249dbeec9d64258.webp",
     "static/media/RinLen_V4.webp": "/project2/static/media/RinLen_V4.b7a28454a112d7ffadc9.webp",
     "static/media/Miku_V3.webp": "/project2/static/media/Miku_V3.097dba79d6aec23c8da7.webp",
+    "static/media/FUKASE.webp": "/project2/static/media/FUKASE.14d3b833acbcec0a7116.webp",
+    "static/media/flower_v3.webp": "/project2/static/media/flower_v3.823bd50b0699c424c042.webp",
+    "static/media/SeeU.webp": "/project2/static/media/SeeU.fc189d4cdd2abd3bf0b7.webp",
+    "static/media/KAITO_V3.webp": "/project2/static/media/KAITO_V3.4a9b279ccab00032a021.webp",
+    "static/media/IA_ROCKS.webp": "/project2/static/media/IA_ROCKS.adfad403928d78adc808.webp",
     "static/media/Gumi_V3.webp": "/project2/static/media/Gumi_V3.baf04da006344613ab5c.webp",
+    "static/media/KAITO_V1.webp": "/project2/static/media/KAITO_V1.948c7d0571ab0937e4e3.webp",
     "static/media/Una_Sugar.webp": "/project2/static/media/Una_Sugar.07522eb1321a5024a9f3.webp",
+    "static/media/MEIKO_V1.webp": "/project2/static/media/MEIKO_V1.1c5310239cd14faa8360.webp",
+    "static/media/flower_v4.webp": "/project2/static/media/flower_v4.b8213cc68f09d71a41be.webp",
     "static/media/Gumi_V2.webp": "/project2/static/media/Gumi_V2.08a904e11c16b7a81384.webp",
     "static/media/Luka_v2.webp": "/project2/static/media/Luka_v2.17c303917655e5f3980c.webp",
+    "static/media/MEIKO_V3.webp": "/project2/static/media/MEIKO_V3.e8096fc3d9faa5ab7a7d.webp",
     "index.html": "/project2/index.html",
     "static/media/circle-chevron-left-solid.svg": "/project2/static/media/circle-chevron-left-solid.c293384d49b8a390ff91.svg",
     "static/media/circle-chevron-right-solid.svg": "/project2/static/media/circle-chevron-right-solid.e0e26f3e059e5a72dd5b.svg",
-    "main.e6e7fe2d.css.map": "/project2/static/css/main.e6e7fe2d.css.map",
-    "main.80640d38.js.map": "/project2/static/js/main.80640d38.js.map",
+    "main.adee1012.css.map": "/project2/static/css/main.adee1012.css.map",
+    "main.25e757b0.js.map": "/project2/static/js/main.25e757b0.js.map",
     "787.f6b2eaaf.chunk.js.map": "/project2/static/js/787.f6b2eaaf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6e7fe2d.css",
-    "static/js/main.80640d38.js"
+    "static/css/main.adee1012.css",
+    "static/js/main.25e757b0.js"
   ]
 }
