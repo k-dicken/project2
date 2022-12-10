@@ -4,7 +4,7 @@ export default function BlankTile(props) {
       style={{
         backgroundColor: props.color,
       }}
-      className="tile"
+      className="tile blank-tile"
     ></div>
   );
 }

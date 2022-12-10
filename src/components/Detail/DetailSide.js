@@ -1,7 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import DataStore from "../../system/DataStore";
 
 export default function DetailSide(props) {
-  const [activeSong, setActiveSong] = useState(0);
+  // const [activeButton, ]
+  // const [image, setImage] = useState(DataStore.data.image);
+
+  // useEffect(() => {
+  //   DataStore.subscribe(onImageUpdate);
+  // }, []);
+
+  // function onImageUpdate() {
+  //   console.log("update");
+  //   setImage(DataStore.data.image);
+  // }
 
   let buttons = props.data.versions.map((version, index) => (
     <button
@@ -12,6 +23,7 @@ export default function DetailSide(props) {
         width: 100 / props.data.versions.length - 3 + "%",
       }}
       onClick={() => {
+        // DataStore.retrieveImage(props.data, index);
         props.retrieveImage(index);
       }}
       // onMouseEnter={(e) => e.target.}
@@ -29,7 +41,7 @@ export default function DetailSide(props) {
           <iframe
             height="100%"
             width="100%"
-            src={props.data.music[activeSong].link}
+            src={props.song.link}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -40,11 +52,7 @@ export default function DetailSide(props) {
           <div className="player-content">
             <button
               onClick={() => {
-                if (activeSong === 0) {
-                  setActiveSong(props.data.music.length - 1);
-                } else {
-                  setActiveSong(activeSong - 1);
-                }
+                props.songIncrease();
               }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -52,18 +60,12 @@ export default function DetailSide(props) {
               </svg>
             </button>
             <div className="song-info">
-              <p className="song-title">{props.data.music[activeSong].title}</p>
-              <p className="song-artist">
-                {props.data.music[activeSong].artist}
-              </p>
+              <p className="song-title">{props.song.title}</p>
+              <p className="song-artist">{props.song.artist}</p>
             </div>
             <button
               onClick={() => {
-                if (activeSong === props.data.music.length - 1) {
-                  setActiveSong(0);
-                } else {
-                  setActiveSong(activeSong + 1);
-                }
+                props.songDecrease();
               }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

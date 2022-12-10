@@ -13,11 +13,6 @@ export default function Tile(props) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => {
-        console.log(
-          "tile",
-          props.vocalsynth.id,
-          props.vocalsynth.nameTranslation
-        );
         props.showDetail(props.vocalsynth.id);
       }}
     >
@@ -34,6 +29,10 @@ export default function Tile(props) {
           style={{
             color: hover ? "#fff" : props.vocalsynth.color,
             border: hover ? props.vocalsynth.color : "#fff",
+            fontSize:
+              20 / props.vocalsynth.nameOriginal.length < 5
+                ? 20 / props.vocalsynth.nameOriginal.length + "vh"
+                : 4 + "vh",
           }}
           className="primary-name"
         >

@@ -4,28 +4,44 @@ import React, { useState, useEffect } from "react";
 import Nav from "./components/Nav/Nav";
 import Detail from "./components/Detail/Detail";
 import Modal from "@mui/material/Modal";
+import DataStore from "./system/DataStore";
 
 export default function App() {
+  //vocalsynth data from json file
   const [vocalSynths, setVocalSynth] = useState(null);
 
+  //detail information
   const [detail, setDetail] = useState(false);
   const [active, setActive] = useState(0);
-  const [image, setImage] = useState(0);
-  const [song, setSong] = useState(0);
-  // const [sortedData, setSortedData] = useState(null);
 
+  //detail's image
+  const [image, setImage] = useState(null);
+
+  //song
+  const [songID, setSongID] = useState(0);
+  const [song, setSong] = useState(null);
+
+  //retrieve data form json file and save it to vocalsynths
   useEffect(() => {
     fetch("data/vs.json")
       .then((result) => result.json())
       .then((data) => {
         setVocalSynth(data);
-        // setSortedData(
-        //   data.sort((a, b) => b.releaseDate.year - a.releaseDate.year)
-        // );
       });
-    window.scrollTo(0, window.innerHeight * 0.1);
   }, []);
 
+  //upon active id for detail changing, retrieve the image and song
+  useEffect(() => {
+    if (vocalSynths) {
+      console.log(
+        vocalSynths[active].versions,
+        vocalSynths[active].versions.length - 1
+      );
+      detailReset();
+    }
+  }, [active]);
+
+  //if there is no vocalsynth data, run loading screen
   if (vocalSynths == null) {
     return (
       <div>
@@ -34,35 +50,61 @@ export default function App() {
     );
   }
 
+  //retrieve the image for the details page
   function retrieveImage(id) {
     if (vocalSynths[active].versions[id]) {
       setImage(vocalSynths[active].versions[id].image);
-      console.log(id, vocalSynths[active].versions[id].image);
+    }
+  }
+
+  function songIncrease() {
+    if (songID === vocalSynths[active].music.length - 1) {
+      retrieveSong(0);
+    } else {
+      retrieveSong(songID + 1);
+    }
+  }
+
+  function songDecrease() {
+    if (songID === 0) {
+      retrieveSong(vocalSynths[active].music.length - 1);
+    } else {
+      retrieveSong(songID - 1);
     }
   }
 
   function retrieveSong(id) {
+    setSongID(id);
     if (vocalSynths[active].music[id]) {
       setSong(vocalSynths[active].music[id]);
-      console.log(id, vocalSynths[active].music[id]);
     }
   }
 
+  function detailReset() {
+    retrieveImage(vocalSynths[active].versions.length - 1);
+    // setSongID(0);
+    retrieveSong(0);
+  }
+
   async function showDetail(id) {
-    console.log(active);
     await setActive(id);
-    console.log(active);
     setDetail(true);
-    await retrieveImage(0);
   }
 
   function closeDetail() {
-    retrieveImage(0);
+    detailReset();
     setDetail(false);
   }
 
   return (
     <div className="App">
+      {/* <button
+        onClick={() => {
+          DataStore.duplicate();
+        }}
+      >
+        test
+      </button> */}
       <Modal
         open={detail}
         onClose={closeDetail}
@@ -76,7 +118,8 @@ export default function App() {
             image={image}
             retrieveImage={retrieveImage}
             song={song}
-            retrieveSong={retrieveSong}
+            songIncrease={songIncrease}
+            songDecrease={songDecrease}
             activeID={active}
             setActive={setActive}
             detail={detail}
@@ -88,12 +131,8 @@ export default function App() {
             viewBox="0 0 512 512"
             onClick={() => {
               if (active === 0) {
-                // setActiveVersion(0);
-                console.log("left = 0");
                 setActive(vocalSynths.length - 1);
               } else {
-                // setActiveVersion(0);
-                console.log("left regular");
                 setActive(active - 1);
               }
             }}
@@ -106,13 +145,8 @@ export default function App() {
             viewBox="0 0 512 512"
             onClick={() => {
               if (active === vocalSynths.length - 1) {
-                // setActiveVersion(0);
-                console.log("right = length");
                 setActive(0);
               } else {
-                // console.log(props.activeID - 1);
-                // setActiveVersion(0);
-                console.log("right regular");
                 setActive(active + 1);
               }
             }}

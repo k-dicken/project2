@@ -51,20 +51,25 @@
         "voiceProvider": "Asami Shimoda",
         "versions": [
             {
-                "image": "rinlen/RinLen_V4.png",
+                "image": "rinlen/RinLen_v2.webp",
                 "version": "V2"
             }, 
             {
-                "image": "rinlen/RinLen_V4.png",
+                "image": "rinlen/RinLen_V4.webp",
                 "version": "V4X"
             }
         ],
         "languages": ["Japanese", "English"],
         "music": [
             {
-            "title": "I Wanna Be It!",
-            "artist": "Kinoshita",
-            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+            "title": "Bring it On",
+            "artist": "GigaP",
+            "link": "https://www.youtube.com/embed/oEkGC2HV7rc"
+            },
+            {
+            "title": "Childish War",
+            "artist": "Reol",
+            "link": "https://www.youtube.com/embed/qYAmduGAwBQ"
             }
         ],
         "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
@@ -95,12 +100,17 @@
         "languages": ["Japanese", "English"],
         "music": [
             {
+            "title": "Hate it Hate it Huge Ego!",
+            "artist": "KurageP",
+            "link": "https://www.youtube.com/embed/0c9958OoTL8"
+            },
+            {
             "title": "I Wanna Be It!",
             "artist": "Kinoshita",
             "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
             }
         ],
-        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+        "wiki": "https://vocaloid.fandom.com/wiki/Otomachi_Una"
     },
     {
         "id": 3,
@@ -136,26 +146,36 @@
         "languages": ["Japanese", "English"],
         "music": [
             {
-            "title": "I Wanna Be It!",
-            "artist": "Kinoshita",
-            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+                "title": "Ten Faced",
+                "artist": "YM",
+                "link": "https://www.youtube.com/embed/Sn4z1MrgqhQ"
+            },
+            {
+            "title": "ECHO",
+            "artist": "CrusherP",
+            "link": "https://www.youtube.com/embed/cQKGUgOfD8U"
+            },
+            {
+            "title": "King",
+            "artist": "Kanaria",
+            "link": "https://www.youtube.com/embed/cm-l2h6GB8Q"
             }
         ],
-        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+        "wiki": "https://vocaloid.fandom.com/wiki/GUMI"
     },
     {
         "id": 4,
         "nameOriginal": "巡音ルカ",
         "nameTranslation": "Megurine Luka",
-        "description": "is a VOCALOID whose age had been stated to be roughly in her teens.",
-        "color": "#FF88CC",
+        "description": "is a VOCALOID2. She is 20 years old. Her design was made to be asymmetrical, so from different angles, she would look different.",
+        "color": "#FF77BB",
         "releaseDate": {
             "month": "June",
             "year": "2009"
         },
-        "company": "Internet Co., Ltd.",
+        "company": "Crypton Future Media, Inc.",
         "programs": ["VOCALOID", "Piapro Studio"],
-        "voiceProvider": "Asami Shimoda",
+        "voiceProvider": "Yū Asakawa",
         "versions": [
             {
                 "image": "luka/Luka_v2.webp",
@@ -169,16 +189,290 @@
         "languages": ["Japanese", "English"],
         "music": [
             {
-            "title": "I Wanna Be It!",
-            "artist": "Kinoshita",
-            "link": "https://www.youtube.com/embed/5M3ZAJdLivU"
+            "title": "Dreamin Chuchu",
+            "artist": "Emon",
+            "link": "https://www.youtube.com/embed/WdHRGH1Qv70"
             },
             {
-            "title": "Viva Happy",
-            "artist": "Mitchie-M",
-            "link": "https://www.youtube.com/embed/WiUjG9fF3zw" 
+            "title": "Leia",
+            "artist": "ゆよゆっぺ",
+            "link": "https://www.youtube.com/embed/e0ddGWxyhUQ" 
             }
         ],
-        "wiki": "https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len"
+        "wiki": "https://vocaloid.fandom.com/wiki/Megurine_Luka"
+    },
+    {
+        "id": 5,
+        "nameOriginal": "カイト",
+        "nameTranslation": "KAITO",
+        "description": "is a VOCALOID1. He is the counterpart to MEIKO.",
+        "color": "#4422EE",
+        "releaseDate": {
+            "month": "Feburary",
+            "year": "2006"
+        },
+        "company": "Crypton Future Media, Inc.",
+        "programs": ["VOCALOID", "Piapro Studio"],
+        "voiceProvider": "Naoto Fūga",
+        "versions": [
+            {
+                "image": "kaito/KAITO_V1.webp",
+                "version": "V1"
+            }, 
+            {
+                "image": "kaito/KAITO_V3.webp",
+                "version": "V3"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+                "title": "SHANTI",
+                "artist": "wotaku",
+                "link": "https://www.youtube.com/embed/POy0RvJeaqM"
+            },
+            {
+                "title": "Ohedo Julia-Night",
+                "artist": "Mitchie-M",
+                "link": "https://www.youtube.com/embed/y3yyYYLyVzw"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/KAITO"
+    },
+    {
+        "id": 6,
+        "nameOriginal": "メイコ",
+        "nameTranslation": "MEIKO",
+        "description": "MEIKO is a VOCALOID1. She is the counterpart to KAITO.",
+        "color": "#DD2244",
+        "releaseDate": {
+            "month": "November",
+            "year": "2004"
+        },
+        "company": "Crypton Future Media, Inc.",
+        "programs": ["VOCALOID", "Piapro Studio"],
+        "voiceProvider": "",
+        "versions": [
+            {
+                "image": "meiko/MEIKO_V1.webp",
+                "version": "V1"
+            }, 
+            {
+                "image": "meiko/MEIKO_V3.webp",
+                "version": "V3"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+                "title": "私の恋はヘルファイア",
+                "artist": "SLAVE.V-V-R",
+                "link": "https://www.youtube.com/embed/heTaHWABCOo"
+            },
+            {
+                "title": "JitterBug",
+                "artist": "Van de Shop",
+                "link": "https://www.youtube.com/embed/3rAblF_p704"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/MEIKO"
+    },
+    {
+        "id": 7,
+        "nameOriginal": "フラワ",
+        "nameTranslation": "flower",
+        "description": "",
+        "color": "#AA66BB",
+        "releaseDate": {
+            "month": "May",
+            "year": "2014"
+        },
+        "company": "Gynoid Co., Ltd.",
+        "programs": ["VOCALOID", "CEVIO AI"],
+        "voiceProvider": "Unknown",
+        "versions": [
+            {
+                "image": "flower/flower_v3.webp",
+                "version": "v3"
+            }, 
+            {
+                "image": "flower/flower_v4.webp",
+                "version": "v4"
+            }
+        ],
+        "languages": ["Japanese"],
+        "music": [
+            {
+            "title": "Fixer",
+            "artist": "Lanndo",
+            "link": "https://www.youtube.com/embed/srH34Tjjo9U"
+            },
+            {
+            "title": "villian",
+            "artist": "teniwoha",
+            "link": "https://www.youtube.com/embed/p9FJXfGHtDA"
+            },
+            {
+            "title": "Newton Dance",
+            "artist": "Nayutalien & Chinozo",
+            "link": "https://www.youtube.com/embed/ZnroCM3V7eA"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Flower"
+    },
+    {
+        "id": 8,
+        "nameOriginal": "ふかせ",
+        "nameTranslation": "Fukase",
+        "description": "is a VOCALOID4 and is a VOCALOID representation of his voice provider, Satoshi Fukase.",
+        "color": "#Fa2222",
+        "releaseDate": {
+            "month": "January",
+            "year": "2016"
+        },
+        "company": "TOKYO FANTASY Inc.",
+        "programs": ["VOCALOID"],
+        "voiceProvider": "Satoshi Fukase",
+        "versions": [
+            {
+                "image": "fukase/FUKASE.webp",
+                "version": "V4"
+            }
+        ],
+        "languages": ["Japanese", "English"],
+        "music": [
+            {
+            "title": "Colorbars",
+            "artist": "GHOST",
+            "link": "https://www.youtube.com/embed/hVPff92tkBE"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/Fukase"
+    },
+    {
+        "id": 9,
+        "nameOriginal": "星尘",
+        "nameTranslation": "Xingchen",
+        "description": "(aka. \"Stardust\") is a VOCALOID4. She is 16 years old and was originally conceptualized as a mascot for Quadimension. She is able to fly through space using her hair.",
+        "color": "#7f4fFa",
+        "releaseDate": {
+            "month": "April",
+            "year": "2016"
+        },
+        "company": "Beijing Photek S&T Development Co., Ltd.",
+        "programs": ["VOCALOID"],
+        "voiceProvider": "Chalili",
+        "versions": [
+            {
+                "image": "xingchen/Stardust.webp",
+                "version": "V4"
+            }
+        ],
+        "languages": ["Chinese"],
+        "music": [
+            {
+            "title": "尘降",
+            "artist": "COP",
+            "link": "https://www.youtube.com/embed/6wwp9HB02-c"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/"
+    },
+    {
+        "id": 10,
+        "nameOriginal": "イア",
+        "nameTranslation": "IA",
+        "description": "is a VOCALOID3 and CeVIO vocal. She is often portrayed as being mysterious and otherworldly due to her original promotions and lack of specified personal info.",
+        "color": "#Ff88Af",
+        "releaseDate": {
+            "month": "June",
+            "year": "2018"
+        },
+        "company": "1st PLACE Co., Ltd.",
+        "programs": ["VOCALOID", "CeVIO"],
+        "voiceProvider": "Lia",
+        "versions": [
+            {
+                "image": "IA/IA_V3.webp",
+                "version": "V3"
+            }
+        ],
+        "languages": ["Japanese"],
+        "music": [
+            {
+            "title": "Six Trillion Years and an Overnight Story",
+            "artist": "KEMU VOXX",
+            "link": "https://www.youtube.com/embed/Om3MTou2kPg"
+            },
+            {
+            "title": "Setsuna Drive",
+            "artist": "滝 善充",
+            "link": "https://www.youtube.com/embed/1HL0NiQJlvo"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/IA"
+    },
+    {
+        "id": 11,
+        "nameOriginal": "시유",
+        "nameTranslation": "SeeU",
+        "description": "is a VOCALOID3. She is 17 years old and described as \"cute and lively, yet mysterious.\"",
+        "color": "#FFAA11",
+        "releaseDate": {
+            "month": "October",
+            "year": "2011"
+        },
+        "company": "SBS A&T Co., Ltd.",
+        "programs": ["VOCALOID"],
+        "voiceProvider": "Dahee Kim",
+        "versions": [
+            {
+                "image": "seeu/SeeU.webp",
+                "version": "V3"
+            }
+        ],
+        "languages": ["Korean", "Japanese"],
+        "music": [
+            {
+            "title": "Poem of a Thousand Years",
+            "artist": "Sangnoksu",
+            "link": "https://www.youtube.com/embed/oIeZP06uOT4"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/"
+    },
+    {
+        "id": 12,
+        "nameOriginal": "鳴花ヒメ・ミコト",
+        "nameTranslation": "MEIKA Hime & Mikoto",
+        "description": "are a VOCALOID5. They are assumed to be around 11 to 12 years old, however the true age is unknown. Their voice is the cool voicetype of the pair.",
+        "color": "#Ba4a8a",
+        "releaseDate": {
+            "month": "March",
+            "year": "2019"
+        },
+        "company": "Gynoid Co., Ltd.",
+        "programs": ["VOCALOID"],
+        "voiceProvider": "Kotori Koiwai",
+        "versions": [
+            {
+                "image": "meika/Meika_V5.webp",
+                "version": "V5"
+            }
+        ],
+        "languages": ["Japanese"],
+        "music": [
+            {
+            "title": "Specialgirl",
+            "artist": "rerulili",
+            "link": "https://www.youtube.com/embed/fsDdgKZdTns"
+            },
+            {
+            "title": "Rumination Thinking",
+            "artist": "rerulili",
+            "link": "https://www.youtube.com/embed/52fXCcJIyag"
+            }
+        ],
+        "wiki": "https://vocaloid.fandom.com/wiki/MEIKA_Hime_%26_Mikoto"
     }
 ]

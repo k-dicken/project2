@@ -13,10 +13,10 @@ body {
   background-color: #E0E0E1;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   position: fixed;
   right: 20px;
-}
+} */
 
 /* * {
   border: red 1px solid;

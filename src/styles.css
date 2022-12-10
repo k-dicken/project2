@@ -65,27 +65,42 @@
 /* NAV */
 /* main style */
 .nav {
-    height: 110vh;
+    height: 100vh;
+    /* height: 110vh; */
 
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 
+    /* overflow-x: scroll; */
     overflow-x: scroll;
     overflow-y: hidden;
 }
 
 .nav::-webkit-scrollbar {
+    height: 1vh;
+    width: 90vw;
     position: fixed;
-    bottom: 0;
+    bottom: 10vh;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+} 
+
+.nav::-webkit-scrollbar-thumb {
+
+    width: 10vw;
+    border-radius: 20px;
+    background-color: #B0ADB2;
 } 
 
 .nav .nav-container {
     width: fit-content;
     
     position: absolute;
-    top: -20vh;
+    /* top: -20vh; */
+    top: -21vh;
     left: -10vw;
 
     display: flex;
@@ -104,24 +119,29 @@
 /* main style */
 
 .tile {
-    height: 22vh;
-    width: 30vh;
+    height: 21vh;
+    width: 29vh;
 
     position: relative;
-    margin: 10px;
+    margin: 1vh;
 
     border-radius: 10px;
     border: 2px solid #E0E0E1;
     background-color: --lmode_light;
 }
 
+.tile.blank-tile {
+    width: 30vh;
+    margin-left: .5vh;
+}
+
 .tile-before {
     position: absolute;
-    width: calc(100% + 10px);
+    width: calc(100% + 1vh);
     height: calc(100%);
     z-index: -1;
     top: 0;
-    left: -10px;    
+    left: -1vh;    
     border-radius: 10px;
     background-color: --dmode_dark;
 }
@@ -209,6 +229,10 @@
     animation-duration: 0.3s;
 }
 
+.tile:hover .tile-text {
+    text-shadow: .1vh .1vh 1vh #21202360;
+}
+
 .tile:hover .tile-image .image-space {
     height: 100%;
     top: 0;
@@ -281,6 +305,7 @@
 .details-main .desc a {
     color: #FFFFFF;
     font-family: Exo2-Bold;
+    text-transform: capitalize;
     text-decoration: none;
     cursor: pointer;
     z-index: 2;
@@ -532,7 +557,7 @@ audio {
 
 .details-image {
     height: 86vh;
-    width: 50%;
+    width: 40%;
 
     display: flex;
     align-items: center;
