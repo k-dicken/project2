@@ -14,13 +14,6 @@ export default function App() {
   const [detail, setDetail] = useState(false);
   const [active, setActive] = useState(0);
 
-  //detail's image
-  const [image, setImage] = useState(null);
-
-  //song
-  const [songID, setSongID] = useState(0);
-  const [song, setSong] = useState(null);
-
   //retrieve data form json file and save it to vocalsynths
   useEffect(() => {
     fetch("data/vs.json")
@@ -33,10 +26,6 @@ export default function App() {
   //upon active id for detail changing, retrieve the image and song
   useEffect(() => {
     if (vocalSynths) {
-      // console.log(
-      //   vocalSynths[active].versions,
-      //   vocalSynths[active].versions.length - 1
-      // );
       detailReset();
     }
   }, [active]);
@@ -50,66 +39,33 @@ export default function App() {
     );
   }
 
-  //retrieve the image for the details page
-  function retrieveImage(id) {
-    if (vocalSynths[active].versions[id]) {
-      setImage(vocalSynths[active].versions[id].image);
-    }
-  }
-
-  function songIncrease() {
-    if (songID === vocalSynths[active].music.length - 1) {
-      retrieveSong(0);
-    } else {
-      retrieveSong(songID + 1);
-    }
-  }
-
-  function songDecrease() {
-    if (songID === 0) {
-      retrieveSong(vocalSynths[active].music.length - 1);
-    } else {
-      retrieveSong(songID - 1);
-    }
-  }
-
-  function retrieveSong(id) {
-    setSongID(id);
-    if (vocalSynths[active].music[id]) {
-      setSong(vocalSynths[active].music[id]);
-    }
-  }
-
   function detailReset() {
+    //set the image of data store to the last image of the active voicebank
     DataStore.retrieveImage(
       vocalSynths[active],
       vocalSynths[active].versions.length - 1
     );
+    //set the song of data store to the first song of the active voicebank
     DataStore.retrieveSong(vocalSynths[active], 0);
-
-    retrieveImage(vocalSynths[active].versions.length - 1);
-    retrieveSong(0);
   }
 
+  //display the details modal
   async function showDetail(id) {
+    //set the idea of the modal
     await setActive(id);
+    //then display it
     setDetail(true);
   }
 
   function closeDetail() {
+    //reset all content of the modal
     detailReset();
+    //close the modal
     setDetail(false);
   }
 
   return (
     <div className="App">
-      {/* <button
-        onClick={() => {
-          DataStore.duplicate();
-        }}
-      >
-        test
-      </button> */}
       <Modal
         open={detail}
         onClose={closeDetail}
@@ -120,11 +76,6 @@ export default function App() {
         <div className="modal">
           <Detail
             data={vocalSynths[active]}
-            image={image}
-            retrieveImage={retrieveImage}
-            song={song}
-            songIncrease={songIncrease}
-            songDecrease={songDecrease}
             activeID={active}
             setActive={setActive}
             detail={detail}

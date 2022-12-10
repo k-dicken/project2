@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function Tile(props) {
+  //track if the tile is being hovered over, necessary for using the data colors when hovered
   const [hover, setHover] = useState(false);
 
   return (
@@ -10,6 +11,7 @@ export default function Tile(props) {
       style={{
         backgroundColor: hover ? props.vocalsynth.color : "#fff",
       }}
+      //set hover
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => {

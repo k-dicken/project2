@@ -4,42 +4,38 @@ import DataStore from "../../system/DataStore";
 export default function DetailSide(props) {
   const [image, setImage] = useState(DataStore.data.image);
   const [song, setSong] = useState(DataStore.data.song);
+  const [anim, setAnim] = useState(DataStore.data.animation);
 
-  // console.log("local", song);
-
+  //set datastore subscribers
   useEffect(() => {
     DataStore.subscribe(onSongUpdate);
     DataStore.subscribe(onImageUpdate);
   }, []);
 
-  useEffect(() => {
-    console.log("song change", song);
-  }, [song]);
-
-  // function onUpdate() {
-  //   onImageUpdate();
-  //   onSongUpdate();
-  // }
-
+  //save image to image state
   function onImageUpdate() {
     setImage(DataStore.data.image);
-    // console.log("update image", image);
+    setAnim("fade-in");
+    const timer = setTimeout(async () => {
+      setAnim("none");
+    }, 1000);
+
+    return () => clearInterval(timer);
   }
 
+  //save song to song state
   function onSongUpdate() {
-    // setSong({
-    //   id: 1,
-    //   data: {
-    //     title: "ECHO",
-    //     artist: "CrusherP",
-    //     link: "https://www.youtube.com/embed/cQKGUgOfD8U",
-    //   },
-    // });
-    console.log("data", DataStore.data.song);
-    setSong(DataStore.data.song);
-    // console.log("update song", song);
+    setSong({
+      id: DataStore.data.song.id,
+      info: {
+        title: DataStore.data.song.info.title,
+        artist: DataStore.data.song.info.artist,
+        link: DataStore.data.song.info.link,
+      },
+    });
   }
 
+  //generate buttons for all versions
   let buttons = props.data.versions.map((version, index) => (
     <button
       key={index}
@@ -49,8 +45,8 @@ export default function DetailSide(props) {
         width: 100 / props.data.versions.length - 3 + "%",
       }}
       onClick={() => {
+        //retrieve button's version's image
         DataStore.retrieveImage(props.data, index);
-        // props.retrieveImage(index);
       }}
     >
       {version.version}
@@ -76,7 +72,6 @@ export default function DetailSide(props) {
           <div className="player-content">
             <button
               onClick={() => {
-                // props.songIncrease();
                 if (song.id === 0) {
                   DataStore.retrieveSong(
                     props.data,
@@ -97,8 +92,6 @@ export default function DetailSide(props) {
             </div>
             <button
               onClick={() => {
-                // props.songDecrease();
-                console.log(song.id, props.data.music.length - 1);
                 if (song.id === props.data.music.length - 1) {
                   DataStore.retrieveSong(props.data, 0);
                 } else {
@@ -116,7 +109,7 @@ export default function DetailSide(props) {
           </p>
         </div>
       </div>
-      <div className="details-image">
+      <div className={`details-image ${anim}`}>
         <img
           src={require("../../images/" + image)}
           alt={props.data.nameTranslation}

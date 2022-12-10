@@ -7,10 +7,6 @@ export default function Nav(props) {
   let bgColor = "#E0E0E1";
   let blankColor = "#FFFFFF";
 
-  const [highlight, setHighlight] = useState([]);
-
-  // console.log(Math.floor(data.length / 4) + 1);
-
   return (
     <div className="nav">
       <div className="nav-container">

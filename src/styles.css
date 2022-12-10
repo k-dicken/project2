@@ -43,11 +43,6 @@
 
 /* APP */
 
-/* * {
-    font-family: Exo2;
-    font-size: 1.8vh;
-  } */
-
 .App {
     height: 100%;
     width: 100vw;
@@ -571,11 +566,23 @@ audio {
     bottom: -2vh;
     transform: rotate(10deg);
     z-index: -2;
+
+
+}
+
+.details-image.fade-in {
+    animation-name: image-fade-in;
+    animation-duration: 1s;
 }
 
 .details-image img {
     height: 100%;
     width: auto;
+}
+
+@keyframes image-fade-in {
+    from {transform: rotate(-2deg); opacity: 0;}
+    to {transform: rotate(10deg); opacity: 1;}
 }
 
 .details-arrow {

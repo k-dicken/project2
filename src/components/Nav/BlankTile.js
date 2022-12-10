@@ -1,4 +1,5 @@
 export default function BlankTile(props) {
+  //blank tile, takes in a color
   return (
     <div
       style={{

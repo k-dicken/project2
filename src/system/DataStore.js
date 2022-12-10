@@ -16,18 +16,15 @@ export default {
     });
   },
   retrieveImage: function (vs, id) {
-    // console.log("retrieve", this.data.image);
     if (vs.versions[id]) {
       this.data.image = vs.versions[id].image;
     }
     this.updateSubscribers();
   },
   retrieveSong: function (vs, id) {
-    // console.log(id);
     this.data.song.id = id;
     if (vs.music[id]) {
       this.data.song.info = vs.music[id];
-      console.log(this.data.song.info);
     }
     this.updateSubscribers();
   },

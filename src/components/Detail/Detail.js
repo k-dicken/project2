@@ -11,14 +11,7 @@ export default function Detail(props) {
     // <div className="modal">
     <div className="details">
       <DetailMain data={props.data} closeDetail={props.closeDetail} />
-      <DetailSide
-        data={props.data}
-        image={props.image}
-        retrieveImage={props.retrieveImage}
-        song={props.song}
-        songIncrease={props.songIncrease}
-        songDecrease={props.songDecrease}
-      />
+      <DetailSide data={props.data} />
     </div>
   );
 }
