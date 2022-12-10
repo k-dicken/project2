@@ -14,6 +14,7 @@ export default function Tile(props) {
       //set hover
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      //show detail modal
       onClick={() => {
         props.showDetail(props.vocalsynth.id);
       }}
