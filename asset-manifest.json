@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project2/static/css/main.adee1012.css",
-    "main.js": "/project2/static/js/main.b313ffc9.js",
+    "main.css": "/project2/static/css/main.0f9896e1.css",
+    "main.js": "/project2/static/js/main.106e9af3.js",
     "static/js/787.f6b2eaaf.chunk.js": "/project2/static/js/787.f6b2eaaf.chunk.js",
     "static/media/Miku_V4.png": "/project2/static/media/Miku_V4.4748dc4941b8cf57fc8f.png",
     "static/media/Una_Sugar.png": "/project2/static/media/Una_Sugar.d544d64d44eb38165322.png",
@@ -42,12 +42,12 @@
     "index.html": "/project2/index.html",
     "static/media/circle-chevron-left-solid.svg": "/project2/static/media/circle-chevron-left-solid.c293384d49b8a390ff91.svg",
     "static/media/circle-chevron-right-solid.svg": "/project2/static/media/circle-chevron-right-solid.e0e26f3e059e5a72dd5b.svg",
-    "main.adee1012.css.map": "/project2/static/css/main.adee1012.css.map",
-    "main.b313ffc9.js.map": "/project2/static/js/main.b313ffc9.js.map",
+    "main.0f9896e1.css.map": "/project2/static/css/main.0f9896e1.css.map",
+    "main.106e9af3.js.map": "/project2/static/js/main.106e9af3.js.map",
     "787.f6b2eaaf.chunk.js.map": "/project2/static/js/787.f6b2eaaf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.adee1012.css",
-    "static/js/main.b313ffc9.js"
+    "static/css/main.0f9896e1.css",
+    "static/js/main.106e9af3.js"
   ]
 }

@@ -32,6 +32,16 @@
             "title": "Viva Happy",
             "artist": "Mitchie-M",
             "link": "https://www.youtube.com/embed/WiUjG9fF3zw"
+            },
+            {
+            "title": "Lucky☆Orb",
+            "artist": "emon(Tes.)",
+            "link": "https://www.youtube.com/embed/AufydOsiD6M"
+            },
+            {
+            "title": "World is Mine",
+            "artist": "ryo",
+            "link": "https://www.youtube.com/embed/jhl5afLEKdo"
             }
         ],
         "wiki": "https://vocaloid.fandom.com/wiki/Hatsune_Miku"
@@ -205,7 +215,7 @@
         "id": 5,
         "nameOriginal": "カイト",
         "nameTranslation": "KAITO",
-        "description": "is a VOCALOID1. He is the counterpart to MEIKO.",
+        "description": "is a VOCALOID1. He is the counterpart to MEIKO. He was one of the 4 known \"Project Daisy\" vocals.",
         "color": "#4422EE",
         "releaseDate": {
             "month": "Feburary",
@@ -243,7 +253,7 @@
         "id": 6,
         "nameOriginal": "メイコ",
         "nameTranslation": "MEIKO",
-        "description": "MEIKO is a VOCALOID1. She is the counterpart to KAITO.",
+        "description": "is a VOCALOID1. She is the counterpart to KAITO. She was one of the 4 known \"Project Daisy\" vocals.",
         "color": "#DD2244",
         "releaseDate": {
             "month": "November",
@@ -251,7 +261,7 @@
         },
         "company": "Crypton Future Media, Inc.",
         "programs": ["VOCALOID", "Piapro Studio"],
-        "voiceProvider": "",
+        "voiceProvider": "Meiko Haigō",
         "versions": [
             {
                 "image": "meiko/MEIKO_V1.webp",
@@ -281,7 +291,7 @@
         "id": 7,
         "nameOriginal": "フラワ",
         "nameTranslation": "flower",
-        "description": "",
+        "description": "is a VOCALOID3. Her voice has been described as \"a charming female vocal\" with a powerful, androgynous-sounding tone. Her clothing appears to have a gothic theme.",
         "color": "#AA66BB",
         "releaseDate": {
             "month": "May",
@@ -293,11 +303,11 @@
         "versions": [
             {
                 "image": "flower/flower_v3.webp",
-                "version": "v3"
+                "version": "V3"
             }, 
             {
                 "image": "flower/flower_v4.webp",
-                "version": "v4"
+                "version": "V4"
             }
         ],
         "languages": ["Japanese"],
