@@ -33,10 +33,10 @@ export default function App() {
   //upon active id for detail changing, retrieve the image and song
   useEffect(() => {
     if (vocalSynths) {
-      console.log(
-        vocalSynths[active].versions,
-        vocalSynths[active].versions.length - 1
-      );
+      // console.log(
+      //   vocalSynths[active].versions,
+      //   vocalSynths[active].versions.length - 1
+      // );
       detailReset();
     }
   }, [active]);
@@ -81,8 +81,13 @@ export default function App() {
   }
 
   function detailReset() {
+    DataStore.retrieveImage(
+      vocalSynths[active],
+      vocalSynths[active].versions.length - 1
+    );
+    DataStore.retrieveSong(vocalSynths[active], 0);
+
     retrieveImage(vocalSynths[active].versions.length - 1);
-    // setSongID(0);
     retrieveSong(0);
   }
 

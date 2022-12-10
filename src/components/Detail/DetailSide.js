@@ -2,17 +2,43 @@ import { useState, useEffect } from "react";
 import DataStore from "../../system/DataStore";
 
 export default function DetailSide(props) {
-  // const [activeButton, ]
-  // const [image, setImage] = useState(DataStore.data.image);
+  const [image, setImage] = useState(DataStore.data.image);
+  const [song, setSong] = useState(DataStore.data.song);
 
-  // useEffect(() => {
-  //   DataStore.subscribe(onImageUpdate);
-  // }, []);
+  // console.log("local", song);
 
-  // function onImageUpdate() {
-  //   console.log("update");
-  //   setImage(DataStore.data.image);
+  useEffect(() => {
+    DataStore.subscribe(onSongUpdate);
+    DataStore.subscribe(onImageUpdate);
+  }, []);
+
+  useEffect(() => {
+    console.log("song change", song);
+  }, [song]);
+
+  // function onUpdate() {
+  //   onImageUpdate();
+  //   onSongUpdate();
   // }
+
+  function onImageUpdate() {
+    setImage(DataStore.data.image);
+    // console.log("update image", image);
+  }
+
+  function onSongUpdate() {
+    // setSong({
+    //   id: 1,
+    //   data: {
+    //     title: "ECHO",
+    //     artist: "CrusherP",
+    //     link: "https://www.youtube.com/embed/cQKGUgOfD8U",
+    //   },
+    // });
+    console.log("data", DataStore.data.song);
+    setSong(DataStore.data.song);
+    // console.log("update song", song);
+  }
 
   let buttons = props.data.versions.map((version, index) => (
     <button
@@ -23,11 +49,9 @@ export default function DetailSide(props) {
         width: 100 / props.data.versions.length - 3 + "%",
       }}
       onClick={() => {
-        // DataStore.retrieveImage(props.data, index);
-        props.retrieveImage(index);
+        DataStore.retrieveImage(props.data, index);
+        // props.retrieveImage(index);
       }}
-      // onMouseEnter={(e) => e.target.}
-      // onMouseLeave={() => setButtonHover(false)}
     >
       {version.version}
     </button>
@@ -41,7 +65,7 @@ export default function DetailSide(props) {
           <iframe
             height="100%"
             width="100%"
-            src={props.song.link}
+            src={song.info.link}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -52,7 +76,15 @@ export default function DetailSide(props) {
           <div className="player-content">
             <button
               onClick={() => {
-                props.songIncrease();
+                // props.songIncrease();
+                if (song.id === 0) {
+                  DataStore.retrieveSong(
+                    props.data,
+                    props.data.music.length - 1
+                  );
+                } else {
+                  DataStore.retrieveSong(props.data, song.id - 1);
+                }
               }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -60,12 +92,18 @@ export default function DetailSide(props) {
               </svg>
             </button>
             <div className="song-info">
-              <p className="song-title">{props.song.title}</p>
-              <p className="song-artist">{props.song.artist}</p>
+              <p className="song-title">{song.info.title}</p>
+              <p className="song-artist">{song.info.artist}</p>
             </div>
             <button
               onClick={() => {
-                props.songDecrease();
+                // props.songDecrease();
+                console.log(song.id, props.data.music.length - 1);
+                if (song.id === props.data.music.length - 1) {
+                  DataStore.retrieveSong(props.data, 0);
+                } else {
+                  DataStore.retrieveSong(props.data, song.id + 1);
+                }
               }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -80,7 +118,7 @@ export default function DetailSide(props) {
       </div>
       <div className="details-image">
         <img
-          src={require("../../images/" + props.image)}
+          src={require("../../images/" + image)}
           alt={props.data.nameTranslation}
         ></img>
       </div>

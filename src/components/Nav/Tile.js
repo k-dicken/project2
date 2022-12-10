@@ -23,7 +23,7 @@ export default function Tile(props) {
             border: hover ? props.vocalsynth.color : "#fff",
           }}
         >
-          {/* {props.vocalsynth.nameTranslation} */}
+          {props.vocalsynth.nameTranslation}
         </p>
         <p
           style={{
